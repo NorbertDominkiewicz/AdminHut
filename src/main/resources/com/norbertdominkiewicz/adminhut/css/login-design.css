@@ -1,0 +1,47 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 13 sie 2025, 00:57:08
+    Author     : norbert
+*/
+
+.left-form{
+    -fx-background-color: linear-gradient(to bottom, #1D1616, #8E1616);
+    -fx-border-width: 0.5px 0px 0.5px 0.5px;
+    -fx-border-color: #000;
+}
+
+.right-form{
+    -fx-background-color: #EEEEEE;
+}
+
+.input{
+    -fx-background-color: linear-gradient(to bottom, #f2e9e9, #e8d8d8);
+    -fx-border-radius: 12px;
+    -fx-border-width: 0 0 0.5px 0;
+    -fx-border-color: #292424;
+    -fx-background-radius: 12px;
+    -fx-font-size: 12px;
+    -fx-font-family: "Monospaced";
+}
+
+.input:focused{
+    -fx-background-color: linear-gradient(to bottom, #f2e9e9, #f5ebeb);
+}
+
+.login-button{
+    -fx-background-color: #f7f5f5;
+    -fx-border-radius: 12px;
+    -fx-border-width: 0 0 0.5px 0;
+    -fx-border-color: #292424;
+    -fx-background-radius: 12px;
+    -fx-font-size: 12px;
+    -fx-font-family: "Monospaced";
+}
+
+.login-button:hover{
+    -fx-background-color: #D84040;
+    -fx-cursor: hand;
+}
