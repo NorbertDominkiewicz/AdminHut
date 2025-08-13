@@ -11,15 +11,17 @@ package com.norbertdominkiewicz.adminhut.services;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class Database {
     
-    public Connection connectDb(){
+    public static Connection connectDb(){
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            Connection connect = DriverManager.getConnection("jdbc:mysql://localhost", "root", "");
-        } catch(Exception e){
-            e.printStackTrace();
+            Connection connect = DriverManager.getConnection("jdbc:mysql://localhost/adminhut", "root", "");
+            return connect;
+        } catch(ClassNotFoundException | SQLException e){
+            System.out.println("Error: " + e.getMessage());
         }
         return null;
     }

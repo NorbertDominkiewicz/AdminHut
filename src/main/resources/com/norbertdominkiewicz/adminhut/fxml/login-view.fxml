@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox fx:controller="com.norbertdominkiewicz.adminhut.controllers.LoginController" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/login-design.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/login-design.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.norbertdominkiewicz.adminhut.controllers.LoginController">
    <children>
       <AnchorPane prefHeight="400.0" prefWidth="300.0" styleClass="left-form">
          <children>
@@ -34,9 +34,9 @@
                   <Font name="Monospaced Bold" size="14.0" />
                </font>
             </Label>
-            <TextField layoutX="40.0" layoutY="148.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="input" />
-            <PasswordField layoutX="40.0" layoutY="210.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="input" />
-            <Button layoutX="95.0" layoutY="277.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" styleClass="login-button">
+            <TextField fx:id="usernameInput" layoutX="40.0" layoutY="148.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="input" />
+            <PasswordField fx:id="passwordInput" layoutX="40.0" layoutY="210.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="input" />
+            <Button fx:id="loginButton" layoutX="95.0" layoutY="277.0" mnemonicParsing="false" onAction="#login" prefHeight="30.0" prefWidth="110.0" styleClass="login-button">
                <graphic>
                   <FontAwesomeIcon glyphName="SIGN_IN" size="1.5em" />
                </graphic>
