@@ -8,6 +8,17 @@ package com.norbertdominkiewicz.adminhut.models;
  *
  * @author norbert
  */
-public class Service {
-    
+public abstract class Service {
+    private String name;
+    private String version;
+    private boolean running;
+    private String workDir;
+    public Service(String name, String version){
+        this.name = name;
+        this.version = version;
+    }
+    public String getName() { return name; }
+    public String getVersion() { return version; }
+    public boolean isRunning() { return running; }
+    public void setRunning(boolean state) { running = state; } 
 }
