@@ -8,11 +8,22 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 */
 
 .root{
-    -fx-background-color: linear-gradient(to right, #0F172A, #1E293B);
+/*    -fx-background-color: linear-gradient(to right, #0F172A, #1E293B);*/
+/*    -fx-background-color: #121212;*/
+    -fx-background-color: linear-gradient(to bottom, #121212, #2C2C2C, #121212);
+    -fx-background-radius: 36px;
+    -fx-border-radius: 36px; 
+    -fx-border-color: #393030;
+    -fx-border-width: 1.5px;
 }
 
 .logo{
     
+}
+
+.close-button{
+    -fx-cursor: hand;
+    -fx-background-color: transparent;
 }
 
 .console-pane{
@@ -33,5 +44,5 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 }
 
 .dashboard-pane{
-    -fx-background-color: beige;    
+    -fx-background-color: transparent;   
 }

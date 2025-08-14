@@ -4,10 +4,16 @@
  */
 package com.norbertdominkiewicz.adminhut.services;
 
+import com.norbertdominkiewicz.adminhut.models.Service;
+
 /**
  *
  * @author norbert
  */
-public class ApacheService {
+public class ApacheService extends Service{
+    
+    public ApacheService(String version) {
+        super("Apache HTTP Server", version);
+    }
     
 }

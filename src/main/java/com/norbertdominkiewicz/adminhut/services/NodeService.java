@@ -4,10 +4,14 @@
  */
 package com.norbertdominkiewicz.adminhut.services;
 
+import com.norbertdominkiewicz.adminhut.models.Service;
+
 /**
  *
  * @author norbert
  */
-public class NodeService {
-    
+public class NodeService extends Service{
+    public NodeService(String version){
+        super("Node.js", version);
+    }
 }

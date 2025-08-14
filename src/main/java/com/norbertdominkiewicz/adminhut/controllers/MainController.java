@@ -9,5 +9,4 @@ package com.norbertdominkiewicz.adminhut.controllers;
  * @author norbert
  */
 public class MainController {
-    
 }
