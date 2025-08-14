@@ -1,0 +1,33 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Aug 14, 2025, 1:56:35 AM
+    Author     : norbert
+*/
+
+.root{
+    -fx-background-color: linear-gradient(to right, #0F172A, #1E293B);
+}
+
+.logo{
+    
+}
+
+.pane-console{
+    -fx-background-color: transparent;
+}
+
+.settings-button{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.console{
+    -fx-border-color: red;
+    -fx-border-width: 1px;
+    -fx-border-radius: 24px;
+    -fx-background-radius: 24px;
+    -fx-background-color: blue;
+}
